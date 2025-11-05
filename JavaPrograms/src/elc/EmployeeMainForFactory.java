@@ -32,7 +32,7 @@ public class EmployeeMainForFactory {
 		double salary = Double.parseDouble(sc.nextLine());
 		
 		EmpolyeeWithFactoryMethod emp=EmpolyeeWithFactoryMethod.createEployeeObject(name, id, department, salary);
-		
+		emp.calculateAnnualSalary();
 		System.out.println(emp);
 		
 		}

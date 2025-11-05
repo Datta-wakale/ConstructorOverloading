@@ -2,15 +2,15 @@ package com.payroll_system;
 
 public class Sourcing 
 {
-	private Employee emp;
+	private PayrollForEmployee empinfo;
 	private int enrollmentTarget;
 	private int enrollmentReached;
 	private double perkPerEnrollment;
 	
-	public Sourcing(Employee emp, int enrollmentTarget, int enrollmentReached, double perkPerEnrollment) 
+	public Sourcing(PayrollForEmployee empinfo, int enrollmentTarget, int enrollmentReached, double perkPerEnrollment)
 	{
 		super();
-		this.emp = emp;
+		this.empinfo = empinfo;
 		this.enrollmentTarget = enrollmentTarget;
 		this.enrollmentReached = enrollmentReached;
 		this.perkPerEnrollment = perkPerEnrollment;
@@ -18,7 +18,7 @@ public class Sourcing
 	
 	public double calculateGrossSalary()
 	{
-		return emp.calculateGrossSalary()+(((enrollmentReached/enrollmentTarget)*100)*perkPerEnrollment);
+		return empinfo.calculateGrossSalary()+(((enrollmentReached/enrollmentTarget)*100)*perkPerEnrollment);
 	}
 	
 	

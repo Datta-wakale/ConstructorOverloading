@@ -44,7 +44,7 @@ public class Product
 	
 	public String toString()
 	{
-		return "Product [Id=" +id+ " Name=" +name+ "Price="+price+"]";
+		 return "Product [Id=" +id+ " Name=" +name+ "Price="+price+"]";
 	}
 	
 	public static Product getProductObject(int id, String name, double price)

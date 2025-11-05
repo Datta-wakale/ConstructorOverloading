@@ -1,19 +1,29 @@
 package com.payroll_system;
 
-public class Manager
+public class Manager 
 {
-	private Employee emp;
-	private double projectAllowance;
+	private PayrollForEmployee empinfo;
 	
-	public Manager(Employee emp,double projectAllowance)
+	private double projectAllowanace;
+
+	public Manager(PayrollForEmployee empinfo, double projectAllowanace)
 	{
-		this.emp=emp;
-		this.projectAllowance=projectAllowance;
+		super();
+		this.empinfo = empinfo;
+		this.projectAllowanace = projectAllowanace;
 	}
 	
 	public double calculateGrossSalary()
 	{
-		return emp.calculateGrossSalary()+projectAllowance;
+		return empinfo.calculateGrossSalary()+projectAllowanace;
 	}
+
+
+
+	
+	
+	
+	
+	
 	
 }

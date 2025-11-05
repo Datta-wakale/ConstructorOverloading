@@ -13,6 +13,7 @@ public class EmpolyeeWithFactoryMethod
 		this.name=name;
 		this.id=id;
 		this.department=department;
+		this.salary=salary;
 	}
 	
 	public static EmpolyeeWithFactoryMethod createEployeeObject(String name, int id, String department,double salary)

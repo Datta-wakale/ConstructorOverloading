@@ -1,4 +1,4 @@
-package blc;
+package com.payroll_system;
 
 public class PayrollForEmployee 
 {

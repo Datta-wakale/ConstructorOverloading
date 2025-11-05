@@ -2,20 +2,24 @@ package com.payroll_system;
 
 public class Trainer
 {
-	private Employee emp;
+	private PayrollForEmployee empinfo;
 	private int batchCount;
-	private double perkPerBatch;
+	private double PerkPerBatch;
 	
-	public Trainer(Employee emp,int batchCount,double perkPerBatch)
+	public Trainer(PayrollForEmployee empinfo, int batchCount, double perkPerBatch) 
+	
 	{
-		this.emp=emp;
-		this.batchCount=batchCount;
-		this.perkPerBatch=perkPerBatch;
-		
+		super();
+		this.empinfo = empinfo;
+		this.batchCount = batchCount;
+		PerkPerBatch = perkPerBatch;
 	}
 	
 	public double calculateGrossSalary()
 	{
-		return emp.calculateGrossSalary()+(batchCount*perkPerBatch);
+		return empinfo.calculateGrossSalary()+(batchCount * PerkPerBatch);
 	}
+	
+	
+	
 }
